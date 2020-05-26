@@ -21,6 +21,8 @@ what is topic?
   
   What is Producer?
     Producer produce value to toics. Which means producer is the publisher.
+    
          kafka-console-producer --broker-list 127.0.0.1:9092 --topic topic_name 
+         
     Above command is used for produce value to topic. This way we can use kafka producer in cli.
       
