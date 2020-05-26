@@ -12,7 +12,8 @@ What is Kafka?
 what is topic?
   topic is the major part of kafka distributted system. messages are stored in topics. In tpoics messages are stored as partitions. each partion contain offset which is the sequence id for partitions. When we produce a message to broker we need to specify the topic name. If we are not specified any name to topic kafka randomly ceate a name for topic. Which means if we are not created a topic and we are saving value to topic it will show a warning and automattically create that topic.
   
-  kafka-topics --bootstrap-server 127.0.0.1:9092 --topics topic_name --create --partion 3 --replication-factor 2
+  
+         kafka-topics --bootstrap-server 127.0.0.1:9092 --topics topic_name --create --partion 3 --replication-factor 2
   
   Above is the command for creating a topic. here partion means how many partion we need to create for particular topic. and replication factor means how many copy of this topic need to distribute in different broker.
   
